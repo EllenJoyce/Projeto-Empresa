@@ -11,7 +11,7 @@ import br.com.projeto.projeto.projetoempresa.models.Projeto;
 import br.com.projeto.projeto.projetoempresa.models.SetorEmpresa;
 
 public class ControllerSetor {
-
+		//função para adicionar setor na base de dados
 		public static void adicionaSetor(String nomeSetor, String nomeGerente)
 				throws SQLException, InstantiationException {
 
