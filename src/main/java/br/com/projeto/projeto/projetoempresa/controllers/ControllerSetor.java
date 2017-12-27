@@ -26,7 +26,7 @@ public class ControllerSetor {
 			conn.close();
 
 		}
-		
+		//função para alterar setor na base de dados
 		public static void alterarSetor(SetorEmpresa s)
 				throws SQLException, InstantiationException {
 
@@ -42,7 +42,7 @@ public class ControllerSetor {
 			conn.close();
  
 		}
-		
+		//função para deletar setor na base de dados
 		public static void deleteSetor(int id)
 				throws SQLException, InstantiationException {
 				
@@ -57,7 +57,7 @@ public class ControllerSetor {
 				
 		}	
 		
-		
+		//função para consultar setor na base de dados
 		public static SetorEmpresa consultaSetorEmp(int id)
 				throws SQLException, InstantiationException {
 			String sql;
@@ -80,8 +80,8 @@ public class ControllerSetor {
 
 			return s;
 		}
-		
-		public static ArrayList<SetorEmpresa> consultaSetores()
+		//Função para listar todos os funcionários
+		/*public static ArrayList<SetorEmpresa> consultaSetores()
 				throws SQLException, InstantiationException {
 			String sql;
 			String table = "PROJETO_EMPRESA.dbo.Setor_empresa";
@@ -102,7 +102,7 @@ public class ControllerSetor {
 			}
 
 			return p;
-		}
+		}*/
 		
 
 		

@@ -9,6 +9,7 @@ import br.com.projeto.projeto.projetoempresa.models.RelacaoProjetoFuncionario;
 import br.com.projeto.projeto.projetoempresa.models.SetorEmpresa;
 
 public class Relacao {
+	//função para adicionar relacionamento na base de dados
 	public static void adicionaRelacao(int idProjeto, String idFunc) throws SQLException, InstantiationException {
 
 		String sql;
@@ -22,7 +23,7 @@ public class Relacao {
 		conn.close();
 
 	}
-
+	//função para alterar relacionamento na base de dados
 	public static void alterarRelacao(RelacaoProjetoFuncionario r) throws SQLException, InstantiationException {
 
 		String sql;
@@ -36,7 +37,7 @@ public class Relacao {
 		conn.close();
 
 	}
-
+	//função para deletar relacionamento na base de dados
 	public static void deleteRelacao(int id) throws SQLException, InstantiationException {
 
 		String sql;
@@ -49,7 +50,7 @@ public class Relacao {
 		conn.close();
 
 	}
-
+	//função para deletar relacionamento com funcionário na base de dados
 	public static void deleteRelacaoFunc(String CPF) throws SQLException, InstantiationException {
 
 		String sql;
@@ -61,7 +62,7 @@ public class Relacao {
 		pstm.executeUpdate();
 		conn.close();
 	}
-
+	//função para deletar relacionamento com projeto na base de dados
 	public static void deleteRelacaoProj(int idprojeto) throws SQLException, InstantiationException {
 
 		String sql;

@@ -13,6 +13,7 @@ public class FuncionarioEmpresa {
 	private String DtNasc;
 	private int id_setor;
 	
+	//Construtor da classe, com parametros específicos
 	public FuncionarioEmpresa(String cpf, String nome, String cargo, String DtNasc, int idsetor){
 		this.CPF=cpf;
 		this.Nome=nome;
@@ -21,6 +22,7 @@ public class FuncionarioEmpresa {
 		this.id_setor=idsetor;
 	}
 	
+	//Funções de Get e Set
 	public String getCPF(){
 		return this.CPF;
 	}

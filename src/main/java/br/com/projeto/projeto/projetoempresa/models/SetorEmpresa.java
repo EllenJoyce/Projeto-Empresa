@@ -10,13 +10,14 @@ public class SetorEmpresa {
 	private String nomesetor;
 	private String gerente;
 	
+	//Construtor da classe, com parametros específicos
 	public SetorEmpresa(int id, String nomesetor, String gerente){
 	    this.id=id;
 	    this.nomesetor=nomesetor;
 	    this.gerente=gerente;
 	    
 	}
-	
+	//Funções de Get e Set
 	public int getid(){
 		return this.id;
 	}

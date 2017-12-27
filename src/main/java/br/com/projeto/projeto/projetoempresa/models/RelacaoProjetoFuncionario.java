@@ -10,12 +10,13 @@ public class RelacaoProjetoFuncionario {
 	private int idprojeto;
 	private String idfunc;
 	
+	//Construtor da classe, com parametros específicos
 	public RelacaoProjetoFuncionario(int id, int idprojeto, String idfunc){
 		this.id=id;
 		this.idprojeto=idprojeto;
 		this.idfunc=idfunc;
 	}
-	
+	//Funções de Get e Set
 	public int getid(){
 		return this.id;
 	}

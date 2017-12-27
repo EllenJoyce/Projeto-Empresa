@@ -11,6 +11,7 @@ import br.com.projeto.projeto.projetoempresa.models.FuncionarioEmpresa;
 import br.com.projeto.projeto.projetoempresa.models.Projeto;
 
 public class ControllerProjeto {
+	//função para adicionar projeto na base de dados
 	public static void adicionaProjeto(String cliente, String nome_projeto, String gestor, int id_setor)
 			throws SQLException, InstantiationException {
 
@@ -28,7 +29,7 @@ public class ControllerProjeto {
 
 	}
 	
-	
+	//função para alterar projeto na base de dados
 	public static void alterarProjeto(Projeto p)
 			throws SQLException, InstantiationException {
 
@@ -47,7 +48,7 @@ public class ControllerProjeto {
 
 	}
 	
-
+	//função para deletar projeto na base de dados
 	public static void deleteProjeto(int id)
 			throws SQLException, InstantiationException {
 			
@@ -63,7 +64,7 @@ public class ControllerProjeto {
 			
 	}	
 	
-
+	//função para deletar projeto pelo setor na base de dados
 	public static void deleteProjetoSetor(int idsetor)
 			throws SQLException, InstantiationException {
 			
@@ -78,6 +79,7 @@ public class ControllerProjeto {
 			conn.close();
 			
 	}	
+	//função para consultar projeto pelo setor na base de dados
 	public static Projeto consultaProj(String nomeProjeto)
 			throws SQLException, InstantiationException {
 		String sql;
@@ -103,8 +105,8 @@ public class ControllerProjeto {
 		return p;
 	}
 	
-	
-	public static ArrayList<Projeto> consultaProjts()
+	//Função para listar todos os projetos
+	/*public static ArrayList<Projeto> consultaProjts()
 			throws SQLException, InstantiationException {
 		String sql;
 		String table = "PROJETO_EMPRESA.dbo.Projeto";
@@ -126,29 +128,5 @@ public class ControllerProjeto {
 		}
 
 		return p;
-	}
-	
-	public static ArrayList<Integer> ConsultaProjSetor(int idSetor)
-			throws SQLException, InstantiationException {
-		String sql;
-		String table = "PROJETO_EMPRESA.dbo.Projeto";
-		sql = "SELECT * FROM " + table + "  WHERE id_setor = ?";
-		Connection conn = TesteConection.connect();
-		PreparedStatement pstm = conn.prepareStatement(sql);
-		pstm.setInt(1, idSetor);
-		ResultSet resultado = (pstm.executeQuery());
-
-		ArrayList<Integer> p = new ArrayList<Integer>();
-		
-		while (resultado.next()) {
-		      int resSetor = resultado.getInt("id_setor");
-			
-			p.add(resSetor);
-		}
-
-		return p;
-	}
-	
-
-
+	}*/
 }

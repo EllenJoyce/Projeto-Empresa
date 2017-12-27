@@ -12,7 +12,7 @@ import br.com.projeto.projeto.projetoempresa.dao.TesteConection;
 import br.com.projeto.projeto.projetoempresa.models.FuncionarioEmpresa;
 
 public class ControllerFuncionario {
-
+    //função para adicionar funcionário na base de dados
 	public static void adicionaFuncionario(String cpf, String nome, String cargo, String dtnasc)
 			throws SQLException, InstantiationException {
 
@@ -30,7 +30,7 @@ public class ControllerFuncionario {
 
 	}
 	
-	
+	//função para alterar funcionário na base de dados
 	public static void alterarFuncionario(FuncionarioEmpresa f)
 			throws SQLException, InstantiationException {
 
@@ -48,7 +48,7 @@ public class ControllerFuncionario {
 		conn.close();
 
 	}
-	
+	//função para deletar funcionário na base de dados
 	public static void deleteFunc(String CPF)
 			throws SQLException, InstantiationException {
 			
@@ -63,7 +63,7 @@ public class ControllerFuncionario {
 			conn.close();
 			
 	}
-	
+	//função para consultar funcionário na base de dados
 	public static FuncionarioEmpresa consultaFunc(String cpf)
 			throws SQLException, InstantiationException {
 		String sql;
@@ -88,8 +88,8 @@ public class ControllerFuncionario {
 
 		return f;
 	}
-	
-	public static ArrayList<FuncionarioEmpresa> consultaFuncs()
+	//Função para listar todos os funcionários
+	/*public static ArrayList<FuncionarioEmpresa> consultaFuncs()
 			throws SQLException, InstantiationException {
 		String sql;
 		String table = "PROJETO_EMPRESA.dbo.Funcionario_empresa";
@@ -111,7 +111,7 @@ public class ControllerFuncionario {
 		}
 
 		return f;
-	}
+	}*/
 	
 	
 

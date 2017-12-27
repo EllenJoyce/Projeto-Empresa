@@ -12,6 +12,7 @@ public class Projeto {
 	private String Gestor;
 	private int id_setor;
 	
+	//Construtor da classe, com parametros específicos
 	public Projeto(int idP, String cliente, String nome_projeto,String gestor, int idsetor){
 		this.id=idP;
 	    this.Cliente=cliente;
@@ -19,7 +20,7 @@ public class Projeto {
 	    this.Gestor=gestor;
 	    this.id_setor=idsetor;
 	}
-	
+	//Funções de Get e Set
 	public int getid(){
 		return this.id;
 	}
